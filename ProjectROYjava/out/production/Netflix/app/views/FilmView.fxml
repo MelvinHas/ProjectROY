@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #141414;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.FilmController">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="-4.0" prefHeight="57.0" prefWidth="606.0" style="-fx-background-color: #000000;">
+         <children>
+            <Button fx:id="btnExitFilm" layoutX="556.0" layoutY="10.0" mnemonicParsing="false" onAction="#exitFilmNow" style="-fx-background-color: #000000;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="123.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Netflix_2014_logo.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblTitel" layoutX="198.0" layoutY="67.0" text="TITEL FILM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgFilm" fitHeight="231.0" fitWidth="177.0" layoutX="14.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblGenre" layoutX="260.0" layoutY="102.0" text="GENRE FILM" />
+      <Label fx:id="lblJaarFilm" layoutX="260.0" layoutY="119.0" text="JAAR FILM" />
+      <Label layoutX="198.0" layoutY="102.0" text="Genre :" />
+      <Label layoutX="198.0" layoutY="119.0" text="Year :" />
+      <Label fx:id="lblSamenvatting" layoutX="191.0" layoutY="147.0" prefHeight="162.0" prefWidth="314.0" text="SAMENVATTING" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="-172.0" layoutY="147.0" prefHeight="35.0" prefWidth="41.0" promptText="SAMENVATTING" style="-fx-background-color: #000000;" />
+      <Label layoutX="197.0" layoutY="139.0" text="Minutes :" />
+      <Label fx:id="lblTIJD" layoutX="260.0" layoutY="139.0" text="TIJD FILM" />
+      <Label layoutX="28.0" layoutY="301.0" text="GIVE YOUR RATING" textFill="WHITE" />
+      <Button fx:id="btnR1" layoutX="23.0" layoutY="318.0" mnemonicParsing="false" onAction="#rate1" style="-fx-background-color: #141414;" text="♥" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnR2" layoutX="46.0" layoutY="318.0" mnemonicParsing="false" onAction="#rate2" style="-fx-background-color: #141414;" text="♥" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnR3" layoutX="68.0" layoutY="318.0" mnemonicParsing="false" onAction="#rate3" style="-fx-background-color: #141414;" text="♥" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnR4" layoutX="91.0" layoutY="318.0" mnemonicParsing="false" onAction="#rate4" style="-fx-background-color: #141414;" text="♥" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnR5" layoutX="114.0" layoutY="318.0" mnemonicParsing="false" onAction="#rate5" style="-fx-background-color: #141414;" text="♥" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

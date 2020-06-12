@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ProjectROYjava.iml" filepath="$PROJECT_DIR$/ProjectROYjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Netflix.iml" filepath="$PROJECT_DIR$/Netflix.iml" />
     </modules>
   </component>
 </project>
