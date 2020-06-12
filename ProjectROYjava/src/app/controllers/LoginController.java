@@ -103,30 +103,13 @@ public class LoginController
     }
 
     //REGISTREREN WEERGEVEN
-    public void yesNow(ActionEvent actionEvent)
-    {
+    public void yesNow(ActionEvent actionEvent) {
         btnRegister.setVisible(true);
         txtAgeRegister.setVisible(true);
         txtEMailRegister.setVisible(true);
         txtUsernameRegister.setVisible(true);
         txtPasswordRegister.setVisible(true);
         btnYesLogin.setTextFill(Color.RED);
-
-        InputStream music;
-        try
-        {
-            System.out.println("Muziek start...");
-
-            music = new FileInputStream("../assets/music/Manuel - Gas Gas Gas.mp");
-            AudioStream audios = new AudioStream (music);
-            AudioPlayer.player.start(audios);
-
-            System.out.println("Muziek speelt");
-        }
-        catch(Exception e)
-        {
-            JOptionPane.showMessageDialog(null,"Error");
-        }
     }
 
 
