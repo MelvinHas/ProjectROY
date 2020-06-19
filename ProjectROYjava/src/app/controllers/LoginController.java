@@ -37,6 +37,8 @@ public class LoginController
     public Button btnExitLogin;
     public Button btnYesLogin;
     public Label lblAnswer;
+    public Label LBLpowered;
+    public Label LBLpowered2;
 
 
     Database db = new Database();
@@ -110,6 +112,9 @@ public class LoginController
         txtUsernameRegister.setVisible(true);
         txtPasswordRegister.setVisible(true);
         btnYesLogin.setTextFill(Color.RED);
+        LBLpowered.setVisible(false);
+        LBLpowered2.setVisible(false);
+
     }
 
 
