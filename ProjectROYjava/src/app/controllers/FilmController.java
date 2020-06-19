@@ -31,7 +31,7 @@ public class FilmController
 
     Database db = new Database();
 
-    //TERUG NAAR HOME
+    //TERUG NAAR HOME DIKKE ROY
     public void exitFilmNow(ActionEvent actionEvent)
     {
         btnExitFilm.setTextFill(Color.RED);
