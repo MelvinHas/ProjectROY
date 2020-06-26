@@ -10,8 +10,8 @@ import java.sql.*;
  */
 public class Database {
     private String host = "185.104.29.78"; // The IP-address of the database host.
-    private String database = "mhasselaar_Movies"; // The name of the database.
-    private String user = "mhasselaar_Movies"; // The name of the database user.
+    private String database = "mhasselaar_brrr"; // The name of the database.
+    private String user = "mhasselaar_brrr"; // The name of the database user.
     private String pass = "1234"; // The password of the database user.
 
     private Connection con;

@@ -102,6 +102,20 @@ public class LoginController
             }
         }
 
+        //Speel muziek
+        InputStream music;
+        try
+        {
+            System.out.println("Muziek speelt");
+            music = new FileInputStream("../assets/music/Manuel - Gas Gas Gas.mp");
+            AudioStream audios = new AudioStream (music);
+            AudioPlayer.player.start(audios);
+        }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(null,"Error");
+        }
+
     }
 
     //REGISTREREN WEERGEVEN
@@ -144,22 +158,6 @@ public class LoginController
         }
     }
 
-    //PLAY MUSIC
-    public static void main(String args[])
-    {
-        InputStream music;
-        try
-        {
-            System.out.println("Muziek speelt");
-            music = new FileInputStream("../assets/music/Manuel - Gas Gas Gas.mp");
-            AudioStream audios = new AudioStream (music);
-            AudioPlayer.player.start(audios);
-        }
-        catch(Exception e)
-        {
-            JOptionPane.showMessageDialog(null,"Error");
-        }
-    }
 
 
     //WACHTWOORD HASHEN

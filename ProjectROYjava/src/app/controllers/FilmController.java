@@ -11,6 +11,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import app.models.Database;
+import sun.audio.AudioPlayer;
+import sun.audio.AudioStream;
+
+import javax.swing.*;
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 public class FilmController
 {
@@ -31,7 +37,7 @@ public class FilmController
 
     Database db = new Database();
 
-    //TERUG NAAR HOME DIKKE ROY
+    //TERUG NAAR HOME
     public void exitFilmNow(ActionEvent actionEvent)
     {
         btnExitFilm.setTextFill(Color.RED);
@@ -61,7 +67,7 @@ public class FilmController
         try
         {
             db.connect();
-            db.query( "INSERT INTO `Ratings`(`Rating`, `FilmID`, `UserID`) VALUE ('1', '+userID+', '+filmID+' );");
+            db.query( "INSERT INTO `Likes`(`userid`, `postid`) VALUE ('1', '+userID+');");
             db.disconnect();
             System.out.println("Rating Done!");
         }
@@ -80,7 +86,7 @@ public class FilmController
         try
         {
             db.connect();
-            db.query( "INSERT INTO `Ratings`(`Rating`) VALUE ('2');");
+            db.query( "INSERT INTO `Likes`(`userid`, `postid`) VALUE ('2', '+userID+');");
             db.disconnect();
             System.out.println("Rating Done!");
         }
@@ -100,7 +106,7 @@ public class FilmController
         try
         {
             db.connect();
-            db.query( "INSERT INTO `Ratings`(`Rating`) VALUE ('3');");
+            db.query( "INSERT INTO `Likes`(`userid`, `postid`) VALUE ('3', '+userID+');");
             db.disconnect();
             System.out.println("Rating Done!");
         }
@@ -121,7 +127,7 @@ public class FilmController
         try
         {
             db.connect();
-            db.query( "INSERT INTO `Ratings`(`Rating`) VALUE ('4');");
+            db.query( "INSERT INTO `Likes`(`userid`, `postid`) VALUE ('4', '+userID+');");
             db.disconnect();
             System.out.println("Rating Done!");
         }
@@ -143,7 +149,7 @@ public class FilmController
         try
         {
             db.connect();
-            db.query( "INSERT INTO `Ratings`(`Rating`, `FilmID`, `UserID`) VALUE ('5', '+userID+', '+filmID+' );");
+            db.query( "INSERT INTO `Likes`(`userid`, `postid`) VALUE ('5', '+userID+');");
             db.disconnect();
             System.out.println("Rating Done!");
         }

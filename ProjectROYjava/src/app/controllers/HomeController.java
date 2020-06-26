@@ -17,7 +17,12 @@ import javafx.stage.Stage;
 import app.models.Database;
 import app.models.Film;
 import app.Main;
+import sun.audio.AudioPlayer;
+import sun.audio.AudioStream;
 
+import javax.swing.*;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
